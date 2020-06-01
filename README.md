@@ -20,6 +20,8 @@ Code and documentation for my complete campervan build.
 * Easy to install remove double bed
 * Water supply (70L) for drinking/cooking or outside shower
 * Rearcamera (RPI camera) automatically activated on reverse
+* Listen to Radio1 and StuBru (probably using MP3 stream
+* Finding a good solution to have internet on the road. 4G access point for example.
 
 ## Software
 * Raspberry PI with Crankshaft and 7" official display
