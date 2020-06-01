@@ -28,8 +28,9 @@ Code and documentation for my complete campervan build.
   * Enable dev mode to get SSH access
   * Install Kodi as media center on Raspberry pi (sudo install kodi && kodi)
   * Install [Netflix on Kodi](https://pimylifeup.com/raspberry-pi-netflix/)
-   * https://github.com/asciidisco/plugin.video.netflix/issues/489 needed for widevine CDM
-   * [inputstream.adaptive](https://forum.odroid.com/viewtopic.php?t=34076) was missing for me
+    * https://github.com/asciidisco/plugin.video.netflix/issues/489 needed for widevine CDM
+    * [inputstream.adaptive](https://forum.odroid.com/viewtopic.php?t=34076) was missing for me
+    * Follow this https://discourse.osmc.tv/t/how-to-all-platforms-can-i-use-netflix-on-osmc-post-4/54741/299
   
 ## Hardware
   
