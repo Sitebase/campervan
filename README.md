@@ -19,7 +19,7 @@ Code and documentation for my complete campervan build.
 * Easy way to disconnect everything from the battery in case of emergency or at night
 * Easy to install remove double bed
 * Water supply (70L) for drinking/cooking or outside shower
-* Rearcamera
+* Rearcamera (RPI camera) automatically activated on reverse
 
 ## Software
 * Raspberry PI with Crankshaft and 7" official display
