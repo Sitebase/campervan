@@ -33,6 +33,9 @@ Code and documentation for my complete campervan build.
     * Follow this https://discourse.osmc.tv/t/how-to-all-platforms-can-i-use-netflix-on-osmc-post-4/54741/299
   
 ## Hardware
+
+## Power consumption
+If this will be the brain of the van it's a good idea to do some power monitoring of it to get and idea of what it's using.
   
 ## Tips
 * First try to make a test setup of all components instead of trying to install this directly in the van
