@@ -27,5 +27,8 @@ Code and documentation for my complete campervan build.
   * Install Kodi as media center on Raspberry pi (sudo install kodi && kodi)
   * Install [Netflix on Kodi](https://pimylifeup.com/raspberry-pi-netflix/)
   
-# Hardware
+## Hardware
   
+## Tips
+* First try to make a test setup of all components instead of trying to install this directly in the van
+* Use a powerful USB power supply to run the Raspberry Pi otherwise you we run into some weird behaviour (at least 2A)
