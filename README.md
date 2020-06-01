@@ -2,26 +2,26 @@
 Code and documentation for my complete campervan build.
 
 ## Requirements
-* [ ] Navigation system in dashboard with large display
-* [ ]Able to call handsfree over bleutooth
-* [ ]Able to stream music from phone to speakers in van
-* [ ]Battery pack with inverter:
+* Navigation system in dashboard with large display
+* Able to call handsfree over bleutooth
+* Able to stream music from phone to speakers in van
+* Battery pack with inverter:
   * Laptop charging
   * TV/Remove laptop screen
   * Indunction cooking
   * Small fridge
-* [ ]Solar setup to charge batteries
-* [ ]Batteries should also get charged while driving
-* [ ]Way to monitor certain parameters of the setup
+* Solar setup to charge batteries
+* Batteries should also get charged while driving
+* Way to monitor certain parameters of the setup
   * Power produced by solar panels
   * Power going in/out of the battery pack
   * AC usage vs DC usage
-* [ ]Easy way to disconnect everything from the battery in case of emergency or at night
-* [ ]Easy to install remove double bed
-* [ ]Water supply (70L) for drinking/cooking or outside shower
-* [ ]Rearcamera (RPI camera) automatically activated on reverse
-* [ ]Listen to Radio1 and StuBru (probably using MP3 stream
-* [ ]Finding a good solution to have internet on the road. 4G access point for example.
+* Easy way to disconnect everything from the battery in case of emergency or at night
+* Easy to install remove double bed
+* Water supply (70L) for drinking/cooking or outside shower
+* Rearcamera (RPI camera) automatically activated on reverse
+* Listen to Radio1 and StuBru (probably using MP3 stream
+* Finding a good solution to have internet on the road. 4G access point for example.
 
 ## Software
 * Raspberry PI with Crankshaft and 7" official display
