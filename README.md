@@ -26,6 +26,7 @@ Code and documentation for my complete campervan build.
   * Enable dev mode to get SSH access
   * Install Kodi as media center on Raspberry pi (sudo install kodi && kodi)
   * Install [Netflix on Kodi](https://pimylifeup.com/raspberry-pi-netflix/)
+   * [inputstream.adaptive](https://forum.odroid.com/viewtopic.php?t=34076) was missing for me
   
 ## Hardware
   
