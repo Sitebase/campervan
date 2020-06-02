@@ -1,0 +1,4 @@
+# Determine to use the 7" display as monitor or the HDMI port
+[gpio6=1]
+ignore_lcd=1
+[all]
