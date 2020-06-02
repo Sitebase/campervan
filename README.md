@@ -34,6 +34,13 @@ Code and documentation for my complete campervan build.
   
 ## Hardware
 
+## Installation
+* Write [Crankshaft image](https://getcrankshaft.com/) to SD Card
+* Plug the SD card in your computer
+* Overwrite all the files in this repo `/boot` to the SD card. 
+
+Some files like the `startup.py` will be overwritten but that doesn't matter as by default these files are empty in crankshaft.
+
 ## Power consumption
 If this will be the brain of the van it's a good idea to do some power monitoring of it to get an idea of what it's consuming.
   
