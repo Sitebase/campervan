@@ -35,7 +35,7 @@ Code and documentation for my complete campervan build.
 ## Hardware
 
 ## Power consumption
-If this will be the brain of the van it's a good idea to do some power monitoring of it to get and idea of what it's using.
+If this will be the brain of the van it's a good idea to do some power monitoring of it to get an idea of what it's consuming.
   
 ## Tips
 * First try to make a test setup of all components instead of trying to install this directly in the van
