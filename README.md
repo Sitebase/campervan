@@ -3,7 +3,7 @@ Code and documentation for my complete campervan build.
 
 ## Requirements
 * Navigation system in dashboard with large display
-* Able to call handsfree over bleutooth
+* Able to call handsfree over bluetooth
 * Able to stream music from phone to speakers in van
 * Battery pack with inverter:
   * Laptop charging
