@@ -1,6 +1,6 @@
 # Make sure to add `include campervan.txt` to your `/boot/config.txt`
 
 # Determine to use the 7" display as monitor or the HDMI port
-[gpio6=1]
+[gpio6=0]
 ignore_lcd=1
 [all]
