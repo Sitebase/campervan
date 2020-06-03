@@ -1,4 +1,5 @@
-!/usr/bin/env python3
+#!/usr/bin/python
+
 import signal
 import sys
 import subprocess, os
