@@ -34,6 +34,13 @@ Code and documentation for my complete campervan build.
   
 ## Hardware
 
+## Buttons
+* Enable rearview camera
+  * 2 buttons
+  * 1 controlled but putting car in reverse
+* Select display
+  * Switch in cabine
+
 ## Installation
 * Write [Crankshaft image](https://getcrankshaft.com/) to SD Card
 * Plug the SD card in your computer
