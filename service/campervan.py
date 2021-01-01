@@ -28,8 +28,8 @@ def handle_buttons():
     print("Handle buttons")
     GPIO.setmode(GPIO.BCM)
 
-    # GPIO.setup(REARCAMERA_GPIO, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-    # GPIO.add_event_detect(REARCAMERA_GPIO, GPIO.FALLING, callback=button_pressed_callback, bouncetime=300)
+    GPIO.setup(REARCAMERA_GPIO, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+    GPIO.add_event_detect(REARCAMERA_GPIO, GPIO.RISING, callback=button_pressed_callback, bouncetime=300)
     
     GPIO.setup(DISPLAY_SELECTION_GPIO, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
     GPIO.add_event_detect(DISPLAY_SELECTION_GPIO, GPIO.RISING, callback=button_pressed_callback, bouncetime=1000)
