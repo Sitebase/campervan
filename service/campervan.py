@@ -5,8 +5,8 @@ import sys
 import subprocess, os
 import RPi.GPIO as GPIO
 
-DISPLAY_SELECTION_GPIO = 6 
-REARCAMERA_GPIO = 5 
+DISPLAY_SELECTION_GPIO = 17 
+REARCAMERA_GPIO = 27 
 
 print("Press Ctrl & C to Quit")
 
@@ -19,9 +19,7 @@ def button_pressed_callback(channel):
     print("Button pressed!", channel)
 
     if channel == REARCAMERA_GPIO:
-        #print(GPIO.input(BUTTON_GPIO))
-        #subprocess.call("logger pressed",shell=True)
-        subprocess.call("crankshaft brightness set 25",shell=True)
+        subprocess.call("xdotool F6",shell=True)
 
     if channel == DISPLAY_SELECTION_GPIO:
         os.system("sudo reboot")
