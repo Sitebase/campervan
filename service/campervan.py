@@ -19,7 +19,7 @@ def button_pressed_callback(channel):
     print("Button pressed!", channel)
 
     if channel == REARCAMERA_GPIO:
-        subprocess.call("/sbin/runuser -l pi -c 'export DISPLAY=:0.0 && /usr/bin/xdotool key N'")
+        os.system("/sbin/runuser -l pi -c 'export DISPLAY=:0.0 && /usr/bin/xdotool key N'")
 
     if channel == DISPLAY_SELECTION_GPIO:
         os.system("sudo reboot")
