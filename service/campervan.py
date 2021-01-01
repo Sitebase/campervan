@@ -22,7 +22,7 @@ def button_pressed_callback(channel):
         os.system("/sbin/runuser -l pi -c 'export DISPLAY=:0.0 && /usr/bin/xdotool key N'")
 
     if channel == DISPLAY_SELECTION_GPIO:
-        os.system("sudo reboot")
+        os.system("sudo shutdown -h now")
 
 def handle_buttons():
     print("Handle buttons")
