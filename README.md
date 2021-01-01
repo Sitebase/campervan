@@ -41,6 +41,12 @@ Code and documentation for my complete campervan build.
 * Select display
   * Switch in cabine
 
+## Service
+Handling of GPIOs (button click detection) is done using a python script which is run as a service on the system.
+
+### Monitor logs of the service
+tail -f /var/log/syslog
+
 ## Installation
 * Write [Crankshaft image](https://getcrankshaft.com/) to SD Card
 * Plug the SD card in your computer
