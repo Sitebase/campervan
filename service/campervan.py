@@ -27,6 +27,7 @@ def button_pressed_callback(channel):
         os.system("sudo reboot")
 
 def handle_buttons():
+    print("Handle buttons")
     GPIO.setmode(GPIO.BCM)
 
     # GPIO.setup(REARCAMERA_GPIO, GPIO.IN, pull_up_down=GPIO.PUD_UP)
