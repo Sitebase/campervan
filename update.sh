@@ -13,7 +13,7 @@
 #sudo apt upgrade -y
 
 # Install dependencies
-# git, vim
+# git, vim, fswebcam
 
 # Create symbolic link to service file
 
