@@ -1,45 +1,36 @@
-# Campervan
-Code and documentation for my complete campervan build.
+# Campervan Head Unit (WIP)
+Code and documentation for my complete campervan central computer that uses [OpenAuto Pro](https://bluewavestudio.io/index.php/bluewave-shop/openauto-pro-detail).
+
+**Note that this repo is work in progress**
+
+## External screen
+Hold button GPIO 17 while booting to use HDMI display as main screen.
 
 ## Requirements
-* Navigation system in dashboard with large display
-* Able to call handsfree over bluetooth
-* Able to stream music from phone to speakers in van
-* Battery pack with inverter:
-  * Laptop charging
-  * TV/Remove laptop screen
-  * Indunction cooking
-  * Small fridge
-* Solar setup to charge batteries
-* Batteries should also get charged while driving
-* Way to monitor certain parameters of the setup
-  * Power produced by solar panels
-  * Power going in/out of the battery pack
-  * AC usage vs DC usage
-* Easy way to disconnect everything from the battery in case of emergency or at night
-* Easy to install remove double bed
-* Water supply (70L) for drinking/cooking or outside shower
-* Rearcamera (RPI camera) automatically activated on reverse
-* Listen to Radio1 and StuBru (probably using MP3 stream
-* Finding a good solution to have internet on the road. 4G access point for example.
+* [x] Navigation system in dashboard with large display
+* [x] Able to call handsfree over bluetooth
+* [x] Able to stream music from phone to speakers in van
+* [ ] Rearcamera (RPI camera) automatically activated on reverse
+* [ ] Listen to Radio1 and StuBru (probably using MP3 stream
+* [ ] Finding a good solution to have internet on the road. 4G access point for example.
 
-## Software
-* Raspberry PI with Crankshaft and 7" official display
-  * Enable dev mode to get SSH access
-  * Install Kodi as media center on Raspberry pi (sudo install kodi && kodi)
-  * Install [Netflix on Kodi](https://pimylifeup.com/raspberry-pi-netflix/)
-    * https://github.com/asciidisco/plugin.video.netflix/issues/489 needed for widevine CDM
-    * [inputstream.adaptive](https://forum.odroid.com/viewtopic.php?t=34076) was missing for me
-    * Follow this https://discourse.osmc.tv/t/how-to-all-platforms-can-i-use-netflix-on-osmc-post-4/54741/299
-  
 ## Hardware
+* Raspberry Pi 4 Model B
+* 7inch touch display
+* BerryGPS (not really needed if you don't use offline navigation)
 
 ## Buttons
 * Enable rearview camera
-  * 2 buttons
-  * 1 controlled but putting car in reverse
-* Select display
-  * Switch in cabine
+* Button to shutdown the system (i don't have a clear shutdown flow implemented yet based on ignition I/O input)
+    * Hold this same button while booting to use the HDMI output as main screen
+
+## Case
+I've made a basic structure for holding the screen and making a test setup for this head unit.
+I use the screen mirror mounting point with a custom printed adapter to attach the head unit to the window.
+
+How you attach the unit to your window will depend on what's available in your car.
+
+In the case folder you can take a look at the step files for the current case.
 
 ## Service
 Handling of GPIOs (button click detection) is done using a python script which is run as a service on the system.
@@ -48,11 +39,10 @@ Handling of GPIOs (button click detection) is done using a python script which i
 tail -f /var/log/syslog
 
 ## Installation
-* Write [Crankshaft image](https://getcrankshaft.com/) to SD Card
-* Plug the SD card in your computer
-* Overwrite all the files in this repo `/boot` to the SD card. 
-
-Some files like the `startup.py` will be overwritten but that doesn't matter as by default these files are empty in crankshaft.
+* SSH into OpenAuto Pro clean install
+* Go to home folder
+* Do a git clone
+* Run install.sh
 
 ## Power consumption
 If this will be the brain of the van it's a good idea to do some power monitoring of it to get an idea of what it's consuming.
@@ -60,3 +50,4 @@ If this will be the brain of the van it's a good idea to do some power monitorin
 ## Tips
 * First try to make a test setup of all components instead of trying to install this directly in the van
 * Use a powerful USB power supply to run the Raspberry Pi otherwise you we run into some weird behaviour (at least 2A)
+* When trying to use android auto make sure you have a sound card plugged in otherwise it doesn't seem to start up.
