@@ -11,7 +11,7 @@ Hold button GPIO 17 while booting to use HDMI display as main screen.
 * [x] Able to call handsfree over bluetooth
 * [x] Able to stream music from phone to speakers in van
 * [ ] Rearcamera (RPI camera) automatically activated on reverse
-* [ ] Listen to Radio1 and StuBru (probably using MP3 stream
+* [ ] Listen to Radio1 (probably using MP3 stream)
 * [ ] Finding a good solution to have internet on the road. 4G access point for example.
 
 ## Hardware
